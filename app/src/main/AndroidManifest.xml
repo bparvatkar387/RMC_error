@@ -17,18 +17,19 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DiseaseMain">
+        <activity android:name=".BottomNavMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuWasteSegregation"></activity>
-        <activity android:name=".MenuFoodAdulteration" />
-        <activity android:name=".Splash_screen">
+        <activity android:name=".DiseaseMain">
 
         </activity>
+        <activity android:name=".MenuWasteSegregation" />
+        <activity android:name=".MenuFoodAdulteration" />
+        <activity android:name=".Splash_screen"></activity>
         <activity android:name=".UserLogin" />
         <activity
             android:name=".Showimg_wastepickupreport"
