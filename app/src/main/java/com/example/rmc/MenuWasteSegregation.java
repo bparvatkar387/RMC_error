@@ -5,13 +5,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MenuWasteSegregation extends AppCompatActivity {
+public class MenuWasteSegregation extends AppCompatActivity implements MenuWasteRecycler.OnMenuWasteListener{
     JSONObject json_waste_all;
+    RecyclerView recyclerView;
+    MenuWasteRecycler menuWasteRecycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,8 @@ public class MenuWasteSegregation extends AppCompatActivity {
     private void filWasteMenu(String menuWaste) {
         try {
             JSONArray all_menusJsonArray = json_waste_all.getJSONArray(menuWaste);
-            RecyclerView recyclerView = findViewById(R.id.menu_waste_segregation);
-            MenuWasteRecycler menuWasteRecycler = new MenuWasteRecycler(getApplicationContext(), all_menusJsonArray);
+            recyclerView = findViewById(R.id.menu_waste_segregation);
+            menuWasteRecycler = new MenuWasteRecycler(getApplicationContext(), all_menusJsonArray, this);
             recyclerView.setAdapter(menuWasteRecycler);
             recyclerView.setLayoutManager(new LinearLayoutManager(MenuWasteSegregation.this));
 
@@ -39,6 +42,13 @@ public class MenuWasteSegregation extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
+    }
+
+    @Override
+    public void OnMenuWasteClickListener(int position) {
+        String wasteName = menuWasteRecycler.getClickedWasteName(position);
+        Log.i("wasteName", wasteName);
 
     }
 }

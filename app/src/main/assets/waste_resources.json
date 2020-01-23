@@ -2,13 +2,16 @@
   "menuWaste": [
   {
     "title" : "Dry / Recycler Waste",
-    "img" : "milk"
+    "img" : "milk",
+    "src" : "dry"
   }, {
     "title" : "Organic Waste",
-    "img" : "milk"
+    "img" : "milk",
+    "src" : "organic"
   },{
     "title" : "Reject / Sanitary Waste",
-    "img" : "milk"
+    "img" : "milk",
+    "src" : "reject"
   },{
     "title" : "E Waste",
     "img" : "milk"

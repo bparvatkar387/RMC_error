@@ -18,15 +18,15 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MenuWasteSegregation">
+
+        </activity>
+        <activity android:name=".MenuFoodAdulteration"></activity>
+        <activity android:name=".Splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MenuFoodAdulteration"></activity>
-        <activity android:name=".Splash_screen">
-
         </activity>
         <activity android:name=".UserLogin" />
         <activity

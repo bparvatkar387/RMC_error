@@ -15,27 +15,38 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MenuWasteRecycler extends RecyclerView.Adapter<MenuWasteRecycler.ViewHolder> {
+public class MenuWasteRecycler extends RecyclerView.Adapter<MenuWasteRecycler.WasteViewHolder> {
 
     JSONArray wasteList;
     Context context;
+    OnMenuWasteListener onMenuWasteListener;
 
 
-    public MenuWasteRecycler(Context context, JSONArray wasteList) {
+    public MenuWasteRecycler(Context context, JSONArray wasteList, OnMenuWasteListener onMenuWasteListener) {
         this.wasteList = wasteList;
         this.context = context;
+        this.onMenuWasteListener = onMenuWasteListener;
+    }
+
+    public String getClickedWasteName(int position){
+        try {
+            return wasteList.getJSONObject(position).getString("src");
+        } catch (JSONException e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public WasteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.menu_waste_segregation, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        WasteViewHolder viewHolder = new WasteViewHolder(view, onMenuWasteListener);
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MenuWasteRecycler.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MenuWasteRecycler.WasteViewHolder holder, int position) {
         try {
             JSONObject one_waste = wasteList.getJSONObject(position);
             String s_name = one_waste.getString("img");
@@ -55,19 +66,32 @@ public class MenuWasteRecycler extends RecyclerView.Adapter<MenuWasteRecycler.Vi
         return wasteList.length();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class WasteViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         ImageView wasteImg;
         TextView wasteTitle;
         LinearLayout linearLayout;
+        OnMenuWasteListener onMenuWasteListener;
 
-        public ViewHolder(@NonNull View itemView) {
+        public WasteViewHolder(@NonNull View itemView, OnMenuWasteListener onMenuWasteListener) {
             super(itemView);
 
             wasteImg = itemView.findViewById(R.id.wasteImg);
             wasteTitle = itemView.findViewById(R.id.wasteTitle);
             linearLayout = itemView.findViewById(R.id.parent_menu_waste_segregation);
 
+            this.onMenuWasteListener = onMenuWasteListener;
+            itemView.setOnClickListener(this);
+
         }
+
+        @Override
+        public void onClick(View view) {
+            onMenuWasteListener.OnMenuWasteClickListener(getAdapterPosition());
+        }
+    }
+
+    public interface OnMenuWasteListener{
+        void OnMenuWasteClickListener(int position);
     }
 
 }
