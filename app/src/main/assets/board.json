@@ -1,0 +1,20 @@
+[
+	"leaderboard" : [
+		{
+			"name" : "Bhavesh",
+			"points" : 50
+		},{
+			"name" : "Sejpal",
+			"points" : 40
+		},{
+			"name" : "Aakash",
+			"points" : 30
+		},{
+			"name" : "Umesh",
+			"points" : 20
+		},{
+			"name" : "Roshan",
+			"points" : 10
+		},
+	]
+]

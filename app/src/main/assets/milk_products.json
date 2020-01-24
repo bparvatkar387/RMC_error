@@ -8,19 +8,27 @@
     {
       "title" : "Oils and Fats",
       "img" : "oils",
-      "src" : "oils"
+      "src" : "oil_products"
     },
     {
       "title" : "Sugars and Confectionery",
-      "img" : "sugars"
+      "img" : "sugars",
+      "src" : "sugar_products"
+    },
+    {
+      "title" : "Food Grains and its Products",
+      "img" : "food",
+      "src" : "food"
     },
     {
       "title" : "Salts, Spices and Condiments",
-      "img" : "spices"
+      "img" : "spices",
+      "src" : "spices"
     },
     {
       "title" : "Fruits and Vegetables",
-      "img" : "fruits"
+      "img" : "fruits",
+      "src" : "fruits"
     },
     {
       "title" : "Beverages",
@@ -29,44 +37,424 @@
   ],
 
   "milk_products": [{
+    "id" : 1,
     "title": "Detection of water in milk",
     "steps": " \t1. Put a drop of milk on a polished slanting surface \n \t2. Pure milk either stays or flows slowly leaving a white trail behind \n \t3. Milk adultrated with water will flow immediately without leaving a mark",
+    "imageSuccess": "milk_t1",
+    "imageFailure": "milk_f1"
+  },{
+    "id" : 2,
+    "title": "Detection of detergent in milk",
+    "steps": " \t1. Take 5 to 10mI of sample with an equal amount of water. \n \t2. Shake the contents thoroughly. \n \t3. If milk is adulterated with detergent, it forms dense lather. \n \t4. Pure milk will form very thin foam layer due to agitation.",
     "imageSuccess": "milk_t1",
     "imageFailure": "milk_f1"
   },
     {
-    "title": "Detection of water in milk",
-    "steps": " \t1. Put a drop of milk on a polished slanting surface \n \t2. Pure milk either stays or flows slowly leaving a white trail behind \n \t3. Milk adultrated with water will flow immediately without leaving a mark",
-    "imageSuccess": "milk_t1",
-    "imageFailure": "milk_f1"
-  }],
+      "id" : 3,
+      "title": "Detection of starch in milk and milk products (khoya, chenna, paneer)",
+      "steps": " \t1. Boil 2-3 ml of sample with 5mI of water. \n \t2. Cool and add 2-3 drops of tincture of iodine. \n \t3. Formation of blue colour indicates the presence of starch. (In the case of milk, addition of water and boiling is not required)",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 4,
+      "title": "Detection of mashed potatoes, sweet potatoes and other starches in ghee/butter",
+      "steps": " \t1. Take 1/2 teaspoon of ghee/butter in a transparent glass bowl.  \n \t2. Add 2-3 drops of tincture of iodine. \n \t3. Formation of blue colour indicates the presence of mashed potatoes, sweet potatoes and other starches.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
 
   "milk_products-HN": [{
-    "title": "दूध की जांच विधि में पानी का पता लगाना:",
+    "title": "दूध में पानी का पता लगाना:",
     "steps": " \t1. एक पॉलिश की गई सतह पर दूध की एक बूंद डालें \n \t2. शुद्ध दूध या तो ठहर जाता है या धीरे-धीरे सफेद निशान छोड़ता है।  \n \t3. पानी से मिलावटी दूध बिना किसी निशान के तुरंत निकल जाएगा",
     "imageSuccess": "milk_t1",
     "imageFailure": "milk_f1"
   },
     {
-    "title": "दूध की जांच विधि में पानी का पता लगाना:",
-    "steps": " \t1. एक पॉलिश की गई सतह पर दूध की एक बूंद डालें \n \t2. शुद्ध दूध या तो ठहर जाता है या धीरे-धीरे सफेद निशान छोड़ता है।  \n \t3. पानी से मिलावटी दूध बिना किसी निशान के तुरंत निकल जाएगा",
-    "imageSuccess": "milk_t1",
-    "imageFailure": "milk_f1"
-  }],
+      "title": "दूध में डिटर्जेंट का पता लगाना",
+      "steps": " \t1. पानी की समान मात्रा के साथ 5 से 10 मिलीलीटर नमूना लें \n \t2. सामग्री को अच्छी तरह से हिलाएं  \n \t3. यदि दूध में डिटर्जेंट की मिलावट की जाती है, तो यह धने चूने का निर्माण करता है। शुद्ध दूध आंदोलन के कारण बहुत पतली फोम परत बनाएगा।",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "दूध और दूध उत्पादों (खोआ, चना, पनीर) में स्टार्च की जांच",
+      "steps": " \t1. 5 मिलीलीटर पानी के साथ नमूना के 2-3 मिलीलीटर उबालें। \n \t2. ठंडा करे ओर उसमे 2-3 बूंदे टीचर आयोडीन की डाले। \n \t3. नीले रंग का गठन स्टार्च की उपस्थिति को इंगित करता है। (दूध के मामले में, पानी और उसे उबालने की आवश्यकता नहीं है)",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "घी / मक्खन में मैश किए हुए आलू, शकरकंद और अन्य स्टार्च का पता लगाना",
+      "steps": " \t1. पारदर्शी कांच के कटोरे में 1/2 चम्मच घी/ मक्खन लें। \n \t2. टिंचर आयोडीन की 2-3 बूंदें डाले। \n \t3. नीले रंग का गठन मैश किए हुए आल, मीठे आलू और अन्य स्टार्च की उपस्थिति को इंगित करता है।",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
 
   "milk_products-GJ": [
     {
-    "title": "દૂધમાં પાણીની તપાસ પરીક્ષણ પદ્ધતિ:",
-    "steps": " \t1. પોલિશ્ડ સ્લેંટિંગ સપાટી પર દૂધનો એક ટીપો મૂકો. \n \t2. શુદ્ધ દૂધ કાં તો રહે છે અથવા વહે છે ધીમે ધીમે સફેદ પગેરું પાછળ છોડી દો.   \n \t3. ઓ પાણીમાં ભેળસેળ કરેલું દૂધ નિશાન છોડ્યા વિના તરત જ વહેશે",
+      "title": "દૂધમાં પાણીની તપાસ",
+      "steps": " \t1. પોલિશ્ડ સ્લેંટિંગ સપાટી પર દૂધનો એક ટીપો મૂકો. \n \t2. શુદ્ધ દૂધ કાં તો રહે છે અથવા વહે છે ધીમે ધીમે સફેદ પગેરું પાછળ છોડી દો.   \n \t3. ઓ પાણીમાં ભેળસેળ કરેલું દૂધ નિશાન છોડ્યા વિના તરત જ વહેશે",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "દૂધની ડીટરજન્ટની તપાસ",
+      "steps": " \t1. સમાન પ્રમાણમાં પાણી સાથે 5 થી 10 એમ.એલ નમૂના લો. \n \t2. સમાવિષ્ટોને સારી રીતે હલાવો.  \n \t3. જો દૂધમાં ડીટરજન્ટ સાથે ભેળસેળ કરવામાં આવે છે, તો થર બનાવે છે. \n \t4. શુદ્ધ દૂધ આંદોલનને કારણે ખૂબ જ પાતળા ફીણ સ્તરની રચના કરશે. ",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "દૂધ અને દૂધના ઉત્પાદનોમાં(ખોયા, ચેના, પનીર) સ્ટાર્ચની તપાસ",
+      "steps": " \t1. 2-3 મિલીના નમૂનાને 5 મિલી પાણી સાથે   ઉકાળો. \n \t2. ઠંડુ કરો અને આયોડિનના ટિંકચરના 2-3 ટીપાં ઉમેરો.  \n \t3. વાદળી રંગની રચના સ્ટાર્ચની હાજરી સૂચવે છે. (દૂધના કિસ્સામાં, પાણી ઉમેરવું જરૂરી નથી)",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "ઘી / માખણમાં  છૂંદેલા બટાટા, શક્કરીયા અને  અન્ય સ્ટાર્ચની તપાસ",
+      "steps": " \t1. પારદર્શક ગ્લાસ બાઉલમાં 2 ચમચી ઘી / માખણ લો. \n \t2. આયોડિનના ટિંકચરના 2-3 ટીપાં ઉમેરો.  \n \t3. વાદળી રંગની રચના છૂંદેલા બટાટા, શક્કરીયા અને અન્ય સ્ટાર્ચની હાજરી સૂચવે છે.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+
+  "oil_products" : [{
+    "title": "DETECTION OF OTHER OILS IN COCONUT OIL",
+    "steps": " \t1. Take coconut oil in a transparent glass. \n \t2. Place this glass in refrigerator for 30 minutes. (Do not keep in the freezer)  \n \t3. After refrigeration, coconut oil solidifies. \n \t4. If coconut oil is adulterated, then other oils remain as a separate layer.",
     "imageSuccess": "milk_t1",
     "imageFailure": "milk_f1"
   },
     {
-    "title": "दદૂધમાં પાણીની તપાસ પરીક્ષણ પદ્ધતિ:",
-    "steps": " \t1. પોલિશ્ડ સ્લેંટિંગ સપાટી પર દૂધનો એક ટીપો મૂકો. \n \t2. શુદ્ધ દૂધ કાં તો રહે છે અથવા વહે છે ધીમે ધીમે સફેદ પગેરું પાછળ છોડી દો.   \n \t3. ઓ પાણીમાં ભેળસેળ કરેલું દૂધ નિશાન છોડ્યા વિના તરત જ વહેશે",
-    "imageSuccess": "milk_t1",
-    "imageFailure": "milk_f1"
-  }]
+      "title": "Detection of TOCP (Tri-Ortho-Cresyl-Phosphate) in oils and fats",
+      "steps": " \t1. Take 2mI of sample of oil. \n \t2. Add on a little amount of yellow butter (Solid).  \n \t3. Immediate formation of red colour indicates the presence of TOCP.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "PROPER WINTRIZATION OF REFINED WINTERIZED SALAD OILS",
+      "steps": " \t1. Take 100ml sample oil in bottle, cork tightly and seal with paraffin. \n \t2. The bottle is completely submerged in bucket containing finely cracked ice and water is added until it rises to top of the bottle.  \n \t3. The bucket is kept filled solidly with ice by removing any excess water and adding ice when necessary. \n \t4. After 5.5hours remove the bottle and examine oil. \n \t5. If it is properly winterised, sample will be brilliant, clear and limpid.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
 
+  "oil_products-HN" : [
+    {
+      "title": "नारियल तेल में अन्य तेलों का पता लगाना",
+      "steps": " \t1. एक पारदर्शी ग्लास में नारियल का तेल लें। \n \t2. इस ग्लास को 30 मिनट के लिए फ्रिज में रखें। (फ्रीजर में न रखें)   \n \t3. प्रशीतन  के बाद, नारियल तेल जम जाता है \n \t4. यदि नारियल तेल में मिलावट होती है, तो अन्य तेल एक अलग परत के रूप में रहते हैं।",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "तेल और वसा में TOCP (त्रि-ऑर्थो-क्रिसिल-फॉस्फेट) का पता लगाना",
+      "steps": " \t1. 2ml तेल का नमूना लें। \n \t2. थोड़ी मात्रा में पीला मक्खन (सॉलिड) मिलाएं।  \n \t3. लाल रंग का तत्काल गठन TOCP की उपस्थिति को इंगित करता है।",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "परिष्कृत विंटराइज़्ड सलाद तेलों का उचित शीतकालीन परीक्षण",
+      "steps": " \t1. बोतल कॉर्क में 100 मिलीलीटर नमूना तेल कसकर लें और पैराफिन के साथ सील करें। \n \t2. बोतल पूरी तरह से टूटी हुई बर्फ वाली बाल्टी में डूबी हुई है और बोतल के ऊपर उठने तक पानी डाला जाता है।  \n \t3. बाल्टी को किसी भी अतिरिक्त पानी को हटाकर बर्फ से ठोस रूप से भरा जाता है और जब आवश्यक हो तब बर्फ डालकर \n \t4. 5.5 घंटे के बाद बोतल हटा दें और तेल को जांच लें । \n \t5. यदि यह ठीक से विंटराइज़्ड है, तो नमूना शानदार, स्पष्ट और चूना होगा",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+  "oil_products-GJ" : [
+    {
+      "title": "નાળિયેર તેલમાં અન્ય તેલોની તપાસ",
+      "steps": " \t1. પારદર્શક ગ્લાસમાં નાળિયેર તેલ લો. \n \t2. આ ગ્લાસને 30 મિનિટ માટે રેફ્રિજરેટરમાં મૂકો.  (ફ્રીઝરમાં ન રાખશો)  \n \t3. રેફ્રિજરેશન પછી, નાળિયેર તેલ ઘન બને છે.  જો નાળિયેર તેલ ભેળસેળ કરવામાં આવે , તો પછી અન્ય તેલ એક અલગ સ્તર તરીકે રહે છે.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "તેલો અને ચરબીમાં TOCP (ટ્રાઇ-ઓર્થો-ક્રેસિલ-ફોસ્ફેટ) ની તપાસ",
+      "steps": " \t1. તેલના 2ML ના નમૂના લો. \n \t2. થોડી માત્રામાં પીળા માખણ ઉમેરો (સોલિડ).  \n \t3. લાલ રંગની તાત્કાલિક રચના, TOCP ની હાજરી સૂચવે છે.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "રિફાઇન્ડ વાઇન્ટરઇઝ્ડ સલાડ ઓઇલનું પ્રોપર વાઇન્ટરઇઝેશન",
+      "steps": " \t1. બોટલમાં 100 મિલી નમૂનાનું તેલ લો,કૉર્ક ચુસ્તપણે બંધ  કરો અને પેરાફિન સાથે સીલ કરો \n \t2. બોટલ સંપૂર્ણપણે બારીક કાપેલા બરફ અને પાણી વાળી ડોલમાં ડૂબી ગઈ છે. બોટલની ટોચ પર ન આવે ત્યાં સુધી પાણી ઉમેરવામાં આવે છે. \n \t3. વધારે પાણી કાઠી ને અને જરૂરી હોય ત્યારે બરફ ઉમેરીને ડોલને બરફથી ભરેલી રાખવામાં આવે છે. \n \t4. 5.5 કલાક પછી બોટલ ને કાઢો અને તેલની તપાસ કરો.  \n \t5. જો તે યોગ્ય રીતે શિયાળુ થાય, તો નમૂના તેજસ્વી, સ્પષ્ટ હશે.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+  "sugar_products" : [
+    {
+      "title": "Detection of sugar solution in honey-1",
+      "steps": " \t1. Take a transparent glass of water.  \n \t2. Add a drop of honey to the glass.  \n \t3. Pure honey will not disperse in water.\n \t4. If the drop of honey disperses in water, it indicates the presence of added sugar.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of sugar solution in honey-2",
+      "steps": " \t1. Take a cotton wick dipped in a pure honey and light with a match stick.  \n \t2. Pure honey will burn.  \n \t3. If adulterated, the presence of water will not allow the honey to burn if it does; it will produce a cracking sound.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of chalk powder in sugar/pithi sugar/jaggery",
+      "steps": " \t1. Take a transparent glass of water.  \n \t2. Dissolve 10g of sample in water.  \n \t3. If sugar/pithi sugar/jaggery is mixed with chalk, the adulterant will settle down at the bottom.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of aluminium leaves in silver leaves",
+      "steps": " \t1. Take some portion of the leaf and crush it between two fingers. \n \t2. Pure silver leaves will be easily crushed and crumble to the powder form while aluminium leaves will only break into smaller shreds.  \n \t3. Further take the suspected silver leaves and make it in the form of a ball and burn it with the help of a flame. \n \t4. Pure silver leaves burn away completely leaving glistening balls while aluminium leaves are reduced to grey ash.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
 
+  "food" : [
+    {
+      "id" : 1,
+      "title": "Detection of extraneous matter (dust, pebble, stone, straw, weed seeds, damaged grain, weeviled  grain, insects, rodent hair and excreta) in food grains",
+      "steps": " \t1. Take small quantity of sample in a glass plate.  \n \t2. Examine the impurities visually.  \n \t3. Pure food grains will not have any such impurities. \n \t4. Impurities are observed visually in adulterated food grains.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 2,
+      "title": "Detection of dhatura in food grains",
+      "steps": " \t1. Take small quantity of food grains in a glass plate.  \n \t2. Examine the impurities visually.  \n \t3. Dhatura seeds which are flat with edges and blackish brown in colour can be separated out by close examination.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 3,
+      "title": "Detection of excess bran in wheat flour",
+      "steps": " \t1. Take a transparent glass of water.  \n \t2. Sprinkle a spoon of wheat flour on the surface of water.  \n \t3. Pure wheat flour will not show excess bran on water surface. \n \t4. Adulterated wheat flour shows excess bran floating on water surface.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 4,
+      "title": "Detection of khesari dal in dal whole and split",
+      "steps": " \t1. Take small quantity of dal whole or split in a glass plate.  \n \t2. Examine the impurities visually.  \n \t3. Khesari dal which has edped type appearance showing a slant on one side and square in appearance can be separated out by close examination. \n \t4. Pure dal will not have any such impurities.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 5,
+      "title": "Detection of added colour in food grains",
+      "steps": " \t1. Take a transparent glass of water.  \n \t2. Add 2 teaspoons of food grains and mix thoroughly.  \n \t3. Pure food grains will not leave any colour. \n \t4. Adulterated food grains leaves colour immediately in water.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 6,
+      "title": "Detection of turmeric in sella rice",
+      "steps": " \t1. Take a tea spoon of rice in a glass plate.  \n \t2. Sprinkle a small amount of soaked lime (commonly known as chuna which is used in pan) on the rice grains.   \n \t3. Pure grains will not form red colour. \n \t4. Adulterated grains will form red colour.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 1,
+      "title": "Detection of rhodamine B in ragi",
+      "steps": " \t1. Take cotton ball soaked in water or vegetable oil. (conduct the test separately)  \n \t2. Rub the outer surface of the ragi.   \n \t3. If cotton absorbs colour, then it indicates the adulteration of rhodamine B for colouring the outer surface of ragi.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "id" : 1,
+      "title": "Detection of chakunda beans in pulses",
+      "steps": " \t1. Take small quantity of pulses in a transparent glass plate.   \n \t2. Examine the impurities visually.   \n \t3. Chakunda beans can be separated out by close examination.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of sand, soil, insects, webs, lumps, rodent hair and excreta in Atta, Maida, Suji (Rawa)",
+      "steps": " \t These can be identified by visual examination.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+
+  "spices" : [
+    {
+      "title": "Detection of foreign resin in asafoetida (hing)-1",
+      "steps": " \t1. Burn small quantity of asafoetida in a stainless steel spoon.  \n \t2. Pure asafoetida will burn like camphor.  \n \t3. Adulterated asafoetida will not produce bright flame like camphor.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of foreign resin in asafoetida (hing)-2",
+      "steps": " \t1. Powder a gram of asafoetida and take it in a glass container.  \n \t2. Add one tea spoon of water. Mix thoroughly by shaking.  \n \t3. Milky white solution with no sediments represents pure asafoetida.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of papaya seeds in black pepper-1",
+      "steps": " \t1. Add some amount of black pepper to a glass of water.  \n \t2. Pure black pepper settles at the bottom.\n \t3. In the adulterated black pepper, papaya seeds float on the surface of water.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of papaya seeds in black pepper-2",
+      "steps": " \t1. Spread spice on a white paper.  \n \t2. Observe the appearance of the sample using the magnifying glass. \n \t3. Black pepper is brown in colour. It has a wrinkled surface and has a characteristic smell and pungent taste. \n \t4. The papaya seeds have shrunken smooth surface and oval shape. It is greenish brown or blackish brown in colour and has a repulsive flavour.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of light black berries in black pepper",
+      "steps": " \t1. Press the berries with the help of fingers.  \n \t2. Light berries will break easily while black berries of pepper will not break.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of soap stone or other earthy matter in asafoetida (hing)",
+      "steps": " \t1. Shake little portion of the sample with water and allow to settle.  \n \t2. Pure asafoetida will not leave any soap stone or other earthy matter at the bottom. \n \t3. If asafoetida is adulterated, soap stone or other earthy matter will settle down at the bottom.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of artificial/water soluble synthetic colours in chilli powder",
+      "steps": " \t1. Sprinkle chilli powder on the surface of water taken in a glass tumbler.  \n \t2. The artificial colourants will immediately start descending in colour streaks.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of light black berries in black pepper",
+      "steps": " \t1. Float the sample of black pepper in alcohol (rectified spirit).  \n \t2. The mature black pepper berries sink while the light black pepper floats.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of saw dust in chilli powder",
+      "steps": " \t1. Add the sample to water.  \n \t2. The saw dust will float at the surface of water while Chilli powder will settle down in bottom.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of starch in asafoetida",
+      "steps": " \t1. Tincture of iodine is added to the sample of asafoetida.   \n \t2. Appearance of blue colour shows the presence of starch.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of chalk in common salt",
+      "steps": " \t1. Stir a spoonful of sample of salt in a glass of water.   \n \t2. The presence of chalk will make solution white and other insoluble impurities will settle down.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of exhausted cloves in cloves",
+      "steps": " \t1. Take some water in a plass and put cloves.   \n \t2. Genuine cloves will settle down at the bottom while exhausted cloves will float on surface.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of cassia bark in cinnamon",
+      "steps": " \t1. Take small quantity of cinnamon in a plass plate.   \n \t2. If adulterated, on close visual examination, cassia bark that comprises of several layers in between the rough outer and inner most smooth layers can be differentiated from cinnamon. \n \t3. Cinnamon barks are very thin that can be rolled around a pencil or pen. It has a distinct smell.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of grass seeds coloured with charcoal dust in cumin seeds",
+      "steps": " \t1. Rub small amount of cumin seeds on palms.  \n \t2. If palms turn black, adulteration is indicated.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of argemone seeds in mustard seeds",
+      "steps": " \t1. Take small quantity of mustard seeds in a glass plate.   \n \t2. Examine visually for the argemone seeds. \n \t3. Mustard seeds have a smooth surface and when pressed, inside it is yellow in colour. \n \t4. Argemone seeds have grainy, rough surface and are black in colour. When pressed, it is white in colour from inside.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of lead chromate in turmeric whole",
+      "steps": " \t1. Add small quantity of turmeric whole in a transparent glass of water.  \n \t2. Pure turmeric will not leave any colour. \n \t3. Adulterated turmeric appears to be bright in colour and leaves colour immediately in water.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of artificial colour in turmeric powder",
+      "steps": " \t1. Add a teaspoon of turmeric powder in a glass of water.\n \t2. Natural turmeric powder leaves light yellow colour while settling down.\n \t3. Adulterated turmeric powder will leave a strong yellow colour in water while settling down.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of sawdust and powdered bran in powdered spices",
+      "steps": " \t1. Sprinkle powdered spices on the water surface.\n \t2. Pure spices will not leave any saw dust/powdered bran on the surface of water. \n \t3. If spices are adulterated, saw dust/powdered bran will float on the surface.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Differentiation of common salt and iodised salt",
+      "steps": " \t1. Cut a piece of potato, add salt and wait for a minute.\n \t2. Add two drops of lemon juice. \n \t3. If it is iodised salt, blue colour will develop. \n \t4. In the case of common salt, there will be no blue colour.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of coloured dried tendrils of maize cob in saffron",
+      "steps": " \t1. Genuine saffron will not break easily like artificial. Artificial saffron is prepared by soaking maize cob in sugar and colouring it with coal tar.\n \t2. Take a transparent glass of water and add small quantity of saffron. \n \t3. If saffron is adulterated, the artificial colour dissolves in water rapidly. A bit of pure saffron when allowed to dissolve in water will continue to give its saffron colour so long as it lasts.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+  "fruits" : [
+    {
+      "title": "Detection of malachite green in green vegetables like bitter gourd, green chilli and others - 1",
+      "steps": " \t1. Take a cotton piece soaked in water or vegetable oil. (conduct the test separately) \n \t2. Rub the outer green surface of a small part of green vegetable/chilli. \n \t3. If the cotton turns green, then it is adulterated with malachite green.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of malachite green in green vegetables like bitter gourd, green chilli and others - 2",
+      "steps": " \t1. Take a small part of the sample and place on a piece of moistened white blotting paper. \n \t2. The impression of colour on the paper indicates the use of malachite green, or any other low priced artificial colour.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of artificial colour on green peas",
+      "steps": " \t1. Take little amount of green peas in a transparent glass. \n \t2. Add water to it and mix well. \n \t3. Let it stand for half an hour. \n \t4. Clear separation of colour in water indicates adulteration.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of rhodamine B in sweet potato",
+      "steps": " \t1. Take a cotton ball soaked in water or vegetable oil. (conduct the test separately) \n \t2. Rub the outer red surface of the sweet potato. \n \t3. If cotton absorbs colour, then it indicates the usage of rhodamine B for colouring the outer surface of sweet potato.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ],
+
+  "beverages" : [
+    {
+      "title": "Detection of clay in coffee powder",
+      "steps": " \t1. Add 1/2 teaspoon of coffee powder in a transparent Glass of water. \n \t2. Stir for a minute and keep it aside for 5 minutes. Observe the glass at the bottom. \n \t3. Pure coffee powder will not leave any clay particles at the bottom. \n \t4. If coffee powder is adulterated, clay particles will settle at the bottom.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of chicory powder in coffee powder",
+      "steps": " \t1. Take a transparent glass of water. \n \t2. Add a teaspoon of coffee powder. \n \t3. Coffee powder floats over the water but chicory begins to sink.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of exhausted tea in tea leaves - 1",
+      "steps": " \t1. Take a filter paper and spread few tea leaves. \n \t2. Sprinkle with water to wet the filter paper. \n \t3. Wash the filter paper under tap water and observe the stains against light. \n \t4. Pure tea leaves will not stain the filter paper. \n \t5. If coal tar is present, it will immediately stain the filter paper.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of exhausted tea in tea leaves - 2",
+      "steps": " \t1. Take small amount of tea leaves/ dust and place it in the centre of a filter paper.  \n \t2. Add water drop by drop at the heap of the tea leaves/ dust. \n \t3. If the tea is adulterated with a coloured tea, water will dissolve the added colour and leave streak of colour in the filter paper.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of exhausted tea in tea leaves - 3",
+      "steps": " \t1. Spread a little slaked lime on white porcelain tile or glass plate.  \n \t2. Sprinkle a little tea dust on the lime. \n \t3. Red, orange or other shades of colour spreading on the lime will show the presence of coal tar colour. \n \t4. In case of genuine tea, there will be only a slight greenish yellow colour due to chlorophyll, which will appear after some time.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    },
+    {
+      "title": "Detection of iron filings in tea leaves",
+      "steps": " \t1. Take small quantity of tea leaves in a glass plate.  \n \t2. Move the magnet through the tea leaves. \n \t3. Pure tea leaves will not show any iron filings on the magnet. \n \t4. If adulterated, then iron filings will be seen on the magnet.",
+      "imageSuccess": "milk_t1",
+      "imageFailure": "milk_f1"
+    }
+  ]
 }
